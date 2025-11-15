@@ -1,0 +1,168 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(2px);
+  margin: 0;
+  padding: 0;
+}
+
+/* Câu hỏi */
+#quiz-content h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.quiz-box {background: linear-gradient(135deg, #e0f7fa, #ffffff); /* nền dịu, sáng */
+  padding: 35px 40px;
+  border-radius: 25px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  max-width: 700px;
+  margin: 30px auto;
+  transition: all 0.3s ease;
+}
+
+.section-title {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ====== Nút Câu tiếp theo / Nộp bài ====== */
+#skipBtn, #submitEssay {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  padding: 12px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+#skipBtn:hover, #submitEssay:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* ====== Đồng hồ ====== */
+.timer {
+  background: #fff1f2;
+  border: 2px solid #fda4af;
+  padding: 8px 16px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #be123c !important;
+  font-weight: 700;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* ====== Đáp án ====== */
+.choice {
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  background: #fff7ed;
+  border: 1px solid #fcd34d;
+  transition: 0.25s ease;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+.choice:hover {
+  background: #fde68a;
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Đúng */
+.choice.correct {
+  background: #bbf7d0;
+  border-color: #10b981;
+  color: #065f46;
+  font-weight: 600;
+}
+
+/* Sai */
+.choice.wrong {
+  background: #fecaca;
+  border-color: #ef4444;
+  color: #7f1d1d;
+  font-weight: 600;
+}
+
+/* Nhấp nháy đáp án đúng */
+.blink {
+  animation: blinkEffect 0.45s ease-in-out 4;
+}
+
+@keyframes blinkEffect {
+  0%,100% {opacity:1;}
+  50% {opacity:0;}
+}
+
+
+/* ====================== COMMON ====================== */
+.answer-box {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background: #fff;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Trắc nghiệm */
+.correct { color: #198754; font-weight: 600; }
+.wrong { color: #dc3545; font-weight: 600; }
+.blink { animation: blink 0.7s ease; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* Tự luận */
+.essay-review {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.essay-review div {
+  flex: 1 1 45%;
+  margin-bottom: 8px;
+}
+
+.user-answer { color: #0d6efd; font-weight: 500; }
+.correct-answer { color: #198754; font-weight: 600; text-align: right; }
+.title-quiz span {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0 2px;
+  color: #fff;
+  animation: floatColor 3s infinite;
+}
+
+.title-quiz {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* cam → vàng */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* hiệu ứng hover */
+.title-quiz:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
