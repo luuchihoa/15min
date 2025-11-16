@@ -27,6 +27,7 @@ body {
   max-width: 700px;
   margin: 30px auto;
   transition: all 0.3s ease;
+  opacity: 0.8; /* 0 = trong suốt, 1 = rõ */
 }
 
 .section-title {
