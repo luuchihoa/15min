@@ -1,12 +1,15 @@
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  backdrop-filter: blur(2px);
-  margin: 0;
-  padding: 0;
-}
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('IMG_4645.JPG'); /* ảnh nền bạn tải lên */
+    background-size: cover;          /* ảnh phủ toàn màn hình */
+    background-repeat: no-repeat;
+    background-attachment: fixed;    /* cố định khi cuộn */
+    background-position: center;
+    backdrop-filter: blur(2px);      /* làm mờ nhẹ phía sau */
+    margin: 0;
+    padding: 0;
+  }
 
 /* Câu hỏi */
 #quiz-content h5 {
