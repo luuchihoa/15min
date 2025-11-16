@@ -6,7 +6,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;    /* cố định khi cuộn */
     background-position: center;
-    backdrop-filter: blur(2px);      /* làm mờ nhẹ phía sau */
     margin: 0;
     padding: 0;
   }
