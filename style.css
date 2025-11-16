@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-image: url('IMG_4646.JPG'); /* ảnh nền bạn tải lên */
+    background-image: url('IMG_4645.JPG'); /* ảnh nền bạn tải lên */
     background-size: cover;          /* ảnh phủ toàn màn hình */
     background-repeat: no-repeat;
     background-attachment: fixed;    /* cố định khi cuộn */
@@ -27,7 +27,7 @@ body {
   max-width: 700px;
   margin: 30px auto;
   transition: all 0.3s ease;
-  opacity: 0.8; /* 0 = trong suốt, 1 = rõ */
+  opacity: 0.95; /* 0 = trong suốt, 1 = rõ */
 }
 
 .section-title {
