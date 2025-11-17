@@ -340,7 +340,7 @@ function showResults(choiceScore, essayScore, total) {
     <p class="text-center fs-5">Điểm trắc nghiệm: ${choiceScore}/5</p>
     <p class="text-center fs-5">Điểm tự luận: ${essayScore}/5</p>
     <hr>
-    <p class="text-center fw-bold fs-4 color-red">Tổng điểm: ${total}/10</p>
+    <p class="text-center fw-bold fs-4 color-red">Tổng điểm: <span style="color:#be123c;">${total}</span>/10</p>
     <h4 class="mt-4">Xem lại phần trắc nghiệm:</h4>${mcqReview}
     <h4 class="mt-4">Xem lại phần tự luận:</h4>${essayReview}
     <div class="text-center mt-3"><button class="btn btn-secondary" onclick="location.reload()">Làm lại</button></div>
