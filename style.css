@@ -103,7 +103,7 @@ body {
 
 /* Nhấp nháy đáp án đúng */
 .blink {
-  animation: blinkEffect 0.45s ease-in-out 0.2s 3;
+  animation: blink 0.5s ease 0.2s 3;
 }
 
 @keyframes blinkEffect {
