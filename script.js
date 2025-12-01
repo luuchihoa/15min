@@ -346,6 +346,7 @@ function showResults(choiceScore, essayScore, total) {
     <div class="text-center mt-3"><button class="btn btn-secondary" onclick="location.reload()">Làm lại</button></div>
   `;
   winSound.play();
+  writeScore('admin',total);
 }
 
 // ====================== KHỞI TẠO =========================
